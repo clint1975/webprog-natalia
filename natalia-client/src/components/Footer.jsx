@@ -14,10 +14,7 @@ const Footer = () => {
           </p>
 
           <p className="text-xs text-slate-500">
-            © 2026{" "}
-            <span className="font-semibold text-slate-900">
-              Natalia Creative Lab
-            </span>
+            © 2026 <span className="font-semibold text-slate-900">CCN</span>
           </p>
         </div>
 

@@ -25,8 +25,8 @@ const users = [
     isActive: true,
   },
   {
-    firstName: "Leo",
-    lastName: "Vargas",
+    firstName: "Calli",
+    lastName: "Natalia",
     age: "31",
     gender: "male",
     contactNumber: "09182345678",
@@ -38,8 +38,8 @@ const users = [
     isActive: true,
   },
   {
-    firstName: "Zara",
-    lastName: "Mendoza",
+    firstName: "Luger",
+    lastName: "Natalia",
     age: "26",
     gender: "female",
     contactNumber: "09193456789",

@@ -1,4 +1,5 @@
 import Button from "../../components/Button";
+import profPic from "../../assets/img/prof pic.jpg";
 
 const AboutPage = () => {
   return (
@@ -10,7 +11,7 @@ const AboutPage = () => {
         <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
           <div className="flex items-center justify-center">
             <img
-              src="/src/assets/img/prof pic.jpg"
+              src={profPic}
               alt="Profile Picture"
               className="w-72 h-72 object-cover rounded-full border-4 border-black shadow-md"
             />

@@ -1,4 +1,8 @@
 import Button from "../../components/Button";
+import profilePic from "../../assets/img/Clinton Natalia.jpg";
+import clientImg from "../../assets/img/client.jpg";
+import dataImg from "../../assets/img/data.jpg";
+import bookImg from "../../assets/img/book.jpg";
 
 const HomePage = () => {
   return (
@@ -38,7 +42,7 @@ const HomePage = () => {
           </div>
           <div className="flex items-center justify-center">
             <img
-              src="/src/assets/img/Clinton Natalia.jpg"
+              src={profilePic}
               alt="Profile Picture"
               className="w-72 h-72 object-cover rounded-full border-4 border-black shadow-md"
             />
@@ -109,7 +113,7 @@ const HomePage = () => {
           <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
             <div className="flex aspect-[4/3] items-center justify-center rounded-[1.25rem] bg-zinc-200">
               <img
-                src="src/assets/img/client.jpg"
+                src={clientImg}
                 alt="Simple Product Catalog"
                 className="h-full w-full object-cover"
               />
@@ -136,7 +140,7 @@ const HomePage = () => {
           <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
             <div className="flex aspect-[4/3] items-center justify-center rounded-[1.25rem] bg-zinc-200">
               <img
-                src="src/assets/img/data.jpg"
+                src={dataImg}
                 alt="Simple Product Catalog"
                 className="h-full w-full object-cover"
               />
@@ -162,7 +166,7 @@ const HomePage = () => {
           <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
             <div className="flex aspect-[4/3] items-center justify-center rounded-[1.25rem] bg-zinc-200">
               <img
-                src="src/assets/img/book.jpg"
+                src={bookImg}
                 alt="Simple Product Catalog"
                 className="h-full w-full object-cover"
               />
