@@ -21,7 +21,12 @@ const corsOptions = {
   optionsSuccessStatus: 204,
 };
 app.options("*", cors(corsOptions));
-app.use(cors(corsOptions));
+app.use(
+  cors({
+    origin: ["http://localhost:5173", "https://natalia-client-xxx.vercel.app"],
+    credentials: true,
+  }),
+);
 
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
