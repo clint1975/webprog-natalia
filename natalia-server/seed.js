@@ -48,7 +48,7 @@ const users = [
     username: "lugernatalia",
     password: "Luger123!",
     address: "Quezon City, Metro Manila",
-    isActive: false,
+    isActive: true,
   },
   {
     firstName: "Nathan",
@@ -159,7 +159,7 @@ const seed = async () => {
 
     console.log("\nSeed complete. You can now log in with:");
     console.log("  Admin  → admin@natalia.dev / AdminNatalia123!");
-    console.log("  Editor → luger.natalia@natalia.dev / Luger123! (inactive)");
+    console.log("  Editor → luger.natalia@natalia.dev / Luger123!");
     console.log("  Viewer → calli.natalia@natalia.dev / Calli 123!");
 
     process.exit(0);

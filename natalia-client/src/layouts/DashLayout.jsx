@@ -49,7 +49,13 @@ const dashboardNavItems = [
     to: "/dashboard/reports",
     icon: AssessmentIcon,
   },
-  { label: "Users", title: "Users", to: "/dashboard/users", icon: PeopleIcon },
+  {
+    label: "Users",
+    title: "Users",
+    to: "/dashboard/users",
+    icon: PeopleIcon,
+    adminOnly: true,
+  },
   {
     label: "Articles",
     title: "Articles",
@@ -309,12 +315,39 @@ const DashLayout = () => {
         <Divider sx={{ borderColor: "rgba(255,255,255,0.06)" }} />
 
         <List sx={{ px: 1, pt: 1 }}>
-          {visibleNavItems.map(({ label, to, icon: Icon }) => {
+          {visibleNavItems.map(({ label, to, icon: Icon, adminOnly }) => {
             const isSelected = location.pathname === to;
+            const labelContent = (
+              <Box
+                sx={{ display: "inline-flex", alignItems: "center", gap: 1 }}
+              >
+                <Box component="span">{label}</Box>
+                {adminOnly && open && (
+                  <Box
+                    component="span"
+                    sx={{
+                      px: 1,
+                      py: 0.3,
+                      borderRadius: "999px",
+                      backgroundColor: "rgba(132, 204, 22, 0.15)",
+                      color: "#65a30d",
+                      fontSize: 10,
+                      fontWeight: 700,
+                      letterSpacing: "0.05em",
+                      textTransform: "uppercase",
+                    }}
+                  >
+                    Admin
+                  </Box>
+                )}
+              </Box>
+            );
             return (
               <Tooltip
                 key={to}
-                title={!open ? label : ""}
+                title={
+                  !open ? (adminOnly ? `${label} (Admin only)` : label) : ""
+                }
                 placement="right"
                 arrow
               >
@@ -358,7 +391,7 @@ const DashLayout = () => {
                       <Icon fontSize="small" />
                     </ListItemIcon>
                     <ListItemText
-                      primary={label}
+                      primary={labelContent}
                       primaryTypographyProps={{
                         fontSize: 13,
                         fontWeight: isSelected ? 600 : 500,
