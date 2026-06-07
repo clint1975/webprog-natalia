@@ -12,7 +12,6 @@
     "dev:server": "npm run dev --workspace natalia-server",
     "build:client": "npm run build --workspace natalia-client",
     "build:server": "npm run build --workspace natalia-server",
-    "install": "npm install --workspaces",
     "vercel-build": "npm --prefix natalia-client run build"
   }
 }
