@@ -23,7 +23,7 @@ const corsOptions = {
 app.options("*", cors(corsOptions));
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://natalia-client-xxx.vercel.app"],
+    origin: ["http://localhost:5173", "https://webprog-natalia.vercel.app/"],
     credentials: true,
   }),
 );
