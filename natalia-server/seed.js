@@ -15,7 +15,7 @@ const users = [
     firstName: "Admin",
     lastName: "Natalia",
     age: "29",
-    gender: "female",
+    gender: "male",
     contactNumber: "09171234567",
     email: "admin@natalia.dev",
     role: "admin",
@@ -30,10 +30,10 @@ const users = [
     age: "31",
     gender: "male",
     contactNumber: "09182345678",
-    email: "leo.vargas@natalia.dev",
+    email: "calli.natalia@natalia.dev",
     role: "viewer",
-    username: "leovargas",
-    password: "Leo123!",
+    username: "callinatalia",
+    password: "Calli123!",
     address: "Tondo, Manila, Metro Manila",
     isActive: true,
   },
@@ -43,10 +43,10 @@ const users = [
     age: "26",
     gender: "female",
     contactNumber: "09193456789",
-    email: "zara.mendoza@natalia.dev",
+    email: "luger.natalia@natalia.dev",
     role: "editor",
-    username: "zaramendoza",
-    password: "Zara123!",
+    username: "lugernatalia",
+    password: "Luger123!",
     address: "Quezon City, Metro Manila",
     isActive: false,
   },
@@ -159,8 +159,8 @@ const seed = async () => {
 
     console.log("\nSeed complete. You can now log in with:");
     console.log("  Admin  → admin@natalia.dev / AdminNatalia123!");
-    console.log("  Editor → zara.mendoza@natalia.dev / Zara123! (inactive)");
-    console.log("  Viewer → leo.vargas@natalia.dev / Leo123!");
+    console.log("  Editor → luger.natalia@natalia.dev / Luger123! (inactive)");
+    console.log("  Viewer → calli.natalia@natalia.dev / Calli 123!");
 
     process.exit(0);
   } catch (err) {

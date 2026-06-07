@@ -25,7 +25,7 @@ const NavBar = () => {
         <NavLink to="/" className="flex items-center gap-3">
           <div className="space-y-0.5">
             <img
-              src="src/assets/img/logo.png"
+              src="/logo.png"
               alt="Logo"
               className="h-10 w-auto object-contain"
             />

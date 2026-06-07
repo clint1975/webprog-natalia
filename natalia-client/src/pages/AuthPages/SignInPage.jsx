@@ -134,12 +134,11 @@ const SignInPage = () => {
           </p>
           <p>
             <span className="text-slate-900 font-semibold">Editor:</span>{" "}
-            calli.natalia@natalia.dev / Calli123!{" "}
-            <span className="text-slate-500">(inactive)</span>
+            luger.natalia@natalia.dev / Luger123!
           </p>
           <p>
             <span className="text-slate-900 font-semibold">Viewer:</span>{" "}
-            luger.natalia@natalia.dev / Luger123!
+            calli.natalia@natalia.dev / Calli123!
           </p>
         </div>
       </form>
