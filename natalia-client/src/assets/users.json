@@ -5,10 +5,10 @@
     "age": "29",
     "gender": "Make",
     "contactNumber": "09171234567",
-    "email": "adminrjavier@javier.dev",
+    "email": "adminnatalia@natalia.dev",
     "role": "admin",
-    "username": "adminrjavier",
-    "password": "AdminRjavier123!",
+    "username": "adminnatalia",
+    "password": "AdminNatalia123!",
     "address": "Sampaloc, Manila, Metro Manila",
     "isActive": true
   },
