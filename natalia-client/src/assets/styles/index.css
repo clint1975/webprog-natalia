@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+:root {
+  --text: #0f172a;
+  --text-h: #111827;
+  --bg: #e2effa;
+  --bg-alt: #dbe9f8;
+  --border: #94a3b8;
+  --code-bg: #cbd5e1;
+  --accent: #2563eb;
+  --accent-2: #38bdf8;
+  --accent-3: #64748b;
+  --accent-bg: rgba(37, 99, 235, 0.12);
+  --accent-bg-2: rgba(56, 189, 248, 0.14);
+  --accent-bg-3: rgba(100, 116, 139, 0.14);
+  --accent-border: rgba(37, 99, 235, 0.3);
+  --social-bg: rgba(191, 219, 254, 0.55);
+  --shadow: rgba(15, 23, 42, 0.12) 0 10px 20px -4px;
+
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-alt) 100%);
+  color: var(--text);
+}
+
+#root {
+  width: 1345px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-alt) 100%);
+  color: var(--text);
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
+
+/* Light-mode overrides for Tailwind utility classes */
+.bg-zinc-50,
+.bg-zinc-100,
+.bg-white {
+  background-color: #eff6ff !important;
+}
+
+.bg-zinc-200 {
+  background-color: #cbd5e1 !important;
+}
+
+.text-zinc-900,
+.text-zinc-800,
+.text-zinc-700,
+.text-black {
+  color: #0f172a !important;
+}
+
+.text-zinc-600,
+.text-zinc-500,
+.text-zinc-400 {
+  color: #475569 !important;
+}
+
+.border-zinc-200,
+.border-zinc-900 {
+  border-color: #94a3b8 !important;
+}
+
+.bg-zinc-800\/60 {
+  background-color: rgba(15, 23, 42, 0.08) !important;
+}
+
+.hover\:bg-zinc-200:hover {
+  background-color: #dbeafe !important;
+}
+
+.hover\:text-zinc-900:hover,
+.hover\:text-black:hover {
+  color: #f8fafc !important;
+}

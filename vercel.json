@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "builds": [
+    { "src": "natalia-client/package.json", "use": "@vercel/static-build" },
+    { "src": "natalia-server/index.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/natalia-server/index.js" },
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/natalia-client/dist/$1" }
+  ]
+}
